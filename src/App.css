@@ -1,0 +1,71 @@
+/* src/App.css */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  min-width: 800px;
+  background-color: #333;
+  color: white;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav .links {
+  display: flex; /* Ensures that links and the button are laid out in a row */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+nav .links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav .links button {
+  width: 120px; /* Set fixed width */
+  height: 40px; /* Set fixed height */
+  background-color: #f00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure padding and border are included in width and height */
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+}
+nav .links button:hover {
+  font-weight: bold;
+  background-color: rgb(255, 50, 50);
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
