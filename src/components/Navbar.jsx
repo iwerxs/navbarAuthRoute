@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../AuthContext";
 import logoImage from "../assets/compLogo.jpg";
+import "../App.css";
 
 const Navbar = () => {
   const { user, logout } = useAuth();

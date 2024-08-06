@@ -13,7 +13,7 @@ nav {
   align-items: center;
   padding: 10px 20px;
   min-width: 800px;
-  background-color: #333;
+  background-color: #555;
   color: white;
 }
 
@@ -68,4 +68,14 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.heading-numeration {
+  color: aquamarine;
+}
+.heading-create-user {
+  color: magenta;
+}
+.heading-create-company {
+  color: orange;
 }
