@@ -40,7 +40,7 @@ const Navbar = () => {
     return (
       <>
         {links[user.role].map((link) => (
-          <Link key={link.name} to={`/${link.toLowerCase().replace(" ", "-")}`}>
+          <Link key={link.name} to={link.to}>
             {link.name}
           </Link>
         ))}
@@ -58,7 +58,11 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='links'>
-        {user ? <span>Welecome, {user.name}</span> : null}
+        {user ? (
+          <span>Welcome, {user.name}</span>
+        ) : (
+          console.log("user data", user)
+        )}
         {renderLinks()}
       </div>
     </nav>
