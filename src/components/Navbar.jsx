@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
       <div className='links'>
         {user ? (
-          <span>Welcome, {user.role}</span>
+          <span>Welcome, {user.name}</span>
         ) : (
           console.log("user data", user)
         )}
