@@ -19,7 +19,11 @@ export const AuthProvider = ({ children }) => {
       { email: "standard@example.com", password: "standard", role: "standard" },
     ];
 
-    const foundUser = mockDatabase.find((user) => user.email === email);
+    const foundUser = mockDatabase.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    // const foundUser = mockDatabase.find((user) => user.email === email);
 
     if (foundUser) {
       setUser(foundUser);
