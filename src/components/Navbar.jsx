@@ -40,7 +40,7 @@ const Navbar = () => {
     return (
       <>
         {links[user.role].map((link) => (
-          <Link key={link.name} to={link.to}>
+          <Link key={link.name} to={`/${link.toLowerCase().replace(" ", "-")}`}>
             {link.name}
           </Link>
         ))}
@@ -57,7 +57,10 @@ const Navbar = () => {
           <img src={logoImage} alt='company logo' style={{ height: "50px" }} />
         </Link>
       </div>
-      <div className='links'>{renderLinks()}</div>
+      <div className='links'>
+        {user ? <span>Welecome, {user.name}</span> : null}
+        {renderLinks()}
+      </div>
     </nav>
   );
 };
